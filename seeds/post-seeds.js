@@ -28,7 +28,7 @@ const postdata = [
     user_id: 3,
   },
   {
-    title: "Pellentesque eget nunc.",
+    title: "Cheese good",
     post_url:
       "https://secure.img1-fg.wfcdn.com/im/02539660/resize-h755-w755%5Ecompr-r85/5545/55456121/Halloween+Evil+Rat.jpg",
     user_id: 3,
