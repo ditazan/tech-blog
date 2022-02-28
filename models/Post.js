@@ -11,7 +11,7 @@ class Post extends Model {
         where: {
           id: body.post_id,
         },
-        attributes: ["id", "post_url", "title", "created_at"],
+        attributes: ["id", "post_content", "title", "created_at"],
         include: [
           {
             model: models.Comment,
@@ -46,12 +46,9 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    post_url: {
+    post_content: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: {
-        isURL: true,
-      },
     },
     user_id: {
       type: DataTypes.INTEGER,
