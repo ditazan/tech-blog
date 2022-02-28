@@ -6,7 +6,7 @@
   <form class="edit-post-form">
     <div>
       <input name="post-title" type="text" value="{{post.title}}" />
-      <span>({{format_content post.post_content}})</span>
+      <textarea name="post-content" value="{{post.post_content}}"  >{{post.post_content}}</textarea>
     </div>
     <div>
       by you on {{format_date post.created_at}}
